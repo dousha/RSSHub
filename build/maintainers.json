@@ -1436,9 +1436,6 @@
   "/chuanliu/nice": [
     "nczitzk"
   ],
-  "/chuapp/:category?": [
-    "dousha"
-  ],
   "/chub/characters": [
     "flameleaf"
   ],
@@ -3563,9 +3560,6 @@
   "/hpoi/items/work/:id/:order?": [
     "DIYgod"
   ],
-  "/hrbeu/cec/:id": [
-    "tsinglinrain"
-  ],
   "/hrbeu/gx/card/:column/:id?": [],
   "/hrbeu/gx/list/:column/:id?": [],
   "/hrbeu/job/bigemploy": [
@@ -3903,8 +3897,7 @@
   ],
   "/iplaysoft/": [
     "williamgateszhao",
-    "cscnk52",
-    "LokHsu"
+    "cscnk52"
   ],
   "/iplaysoft/tag/:slug": [
     "cscnk52"
@@ -6244,9 +6237,6 @@
   ],
   "/sciencedirect/call-for-paper/:subject": [
     "etShaw-zh"
-  ],
-  "/sciencedirect/journal/:id/current": [
-    "TonyRL"
   ],
   "/sciencedirect/journal/:id": [
     "nczitzk"
