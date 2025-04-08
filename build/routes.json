@@ -1071,192 +1071,6 @@
     "description": "::: tip\n禁漫天堂有多个备用域名，本路由默认使用域名 `https://jmcomic.me`，若该域名无法访问，可以通过在路由最后加上 `?domain=<域名>` 指定路由访问的域名。如指定备用域名为 `https://jmcomic1.me`，则在所有禁漫天堂路由最后加上 `?domain=jmcomic1.me` 即可，此时路由为 [`/18comic?domain=jmcomic1.me`](https://rsshub.app/18comic?domain=jmcomic1.me)\n:::",
     "lang": "zh-CN"
   },
-  "199it": {
-    "name": "199it",
-    "routes": {
-      "/:category{.+}?": {
-        "path": "/:category{.+}?",
-        "name": "资讯",
-        "url": "199it.com",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/199it/newly",
-        "parameters": {
-          "category": {
-            "description": "分类，默认为 `newly`，即最新，可在对应分类页 URL 中找到",
-            "options": [
-              {
-                "label": "最新",
-                "value": "newly"
-              },
-              {
-                "label": "报告",
-                "value": "archives/category/report"
-              },
-              {
-                "label": "新兴产业",
-                "value": "archives/category/emerging"
-              },
-              {
-                "label": "金融科技",
-                "value": "archives/category/fintech"
-              },
-              {
-                "label": "共享经济",
-                "value": "archives/category/sharingeconomy"
-              },
-              {
-                "label": "移动互联网",
-                "value": "archives/category/mobile-internet"
-              },
-              {
-                "label": "电子商务",
-                "value": "archives/category/electronic-commerce"
-              },
-              {
-                "label": "社交网络",
-                "value": "archives/category/social-network"
-              },
-              {
-                "label": "网络广告",
-                "value": "archives/category/advertising"
-              },
-              {
-                "label": "投资&amp;经济，互联网金融",
-                "value": "archives/category/economic-data"
-              },
-              {
-                "label": "服务",
-                "value": "archives/category/service"
-              },
-              {
-                "label": "网络服务行业",
-                "value": "archives/category/dataindustry"
-              },
-              {
-                "label": "用户研究",
-                "value": "archives/category/internet-users"
-              }
-            ]
-          }
-        },
-        "description": ":::tip\n若订阅 [研究报告](https://www.199it.com/archives/category/report)，网址为 `https://www.199it.com/archives/category/report`，请截取 `https://www.199it.com/archives/category/report` 到末尾的部分 `archives/category/report` 作为 `category` 参数填入，此时目标路由为 [`/199it/archives/category/report`](https://rsshub.app/199it/archives/category/report)。\n:::\n\n<details>\n  <summary>更多分类</summary>\n\n| 分类                                                                              | ID                                                                                                      |\n| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |\n| [报告](http://www.199it.com/archives/category/report)                             | [archives/category/report](https://rsshub.app/199it/archives/category/report)                           |\n| [新兴产业](http://www.199it.com/archives/category/emerging)                       | [archives/category/emerging](https://rsshub.app/199it/archives/category/emerging)                       |\n| [金融科技](http://www.199it.com/archives/category/fintech)                        | [archives/category/fintech](https://rsshub.app/199it/archives/category/fintech)                         |\n| [共享经济](http://www.199it.com/archives/category/sharingeconomy)                 | [archives/category/sharingeconomy](https://rsshub.app/199it/archives/category/sharingeconomy)           |\n| [移动互联网](http://www.199it.com/archives/category/mobile-internet)              | [archives/category/mobile-internet](https://rsshub.app/199it/archives/category/mobile-internet)         |\n| [电子商务](http://www.199it.com/archives/category/electronic-commerce)            | [archives/category/electronic-commerce](https://rsshub.app/199it/archives/category/electronic-commerce) |\n| [社交网络](http://www.199it.com/archives/category/social-network)                 | [archives/category/social-network](https://rsshub.app/199it/archives/category/social-network)           |\n| [网络广告](http://www.199it.com/archives/category/advertising)                    | [archives/category/advertising](https://rsshub.app/199it/archives/category/advertising)                 |\n| [投资&amp;经济，互联网金融](http://www.199it.com/archives/category/economic-data) | [archives/category/economic-data](https://rsshub.app/199it/archives/category/economic-data)             |\n| [服务](http://www.199it.com/archives/category/service)                            | [archives/category/service](https://rsshub.app/199it/archives/category/service)                         |\n| [网络服务行业](http://www.199it.com/archives/category/dataindustry)               | [archives/category/dataindustry](https://rsshub.app/199it/archives/category/dataindustry)               |\n| [用户研究](http://www.199it.com/archives/category/internet-users)                 | [archives/category/internet-users](https://rsshub.app/199it/archives/category/internet-users)           |\n\n</details>\n",
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.199it.com/:category"
-            ]
-          },
-          {
-            "title": "最新",
-            "source": [
-              "www.199it.com/newly"
-            ],
-            "target": "/newly"
-          },
-          {
-            "title": "报告",
-            "source": [
-              "www.199it.com/archives/category/report"
-            ],
-            "target": "/archives/category/report"
-          },
-          {
-            "title": "新兴产业",
-            "source": [
-              "www.199it.com/archives/category/emerging"
-            ],
-            "target": "/archives/category/emerging"
-          },
-          {
-            "title": "金融科技",
-            "source": [
-              "www.199it.com/archives/category/fintech"
-            ],
-            "target": "/archives/category/fintech"
-          },
-          {
-            "title": "共享经济",
-            "source": [
-              "www.199it.com/archives/category/sharingeconomy"
-            ],
-            "target": "/archives/category/sharingeconomy"
-          },
-          {
-            "title": "移动互联网",
-            "source": [
-              "www.199it.com/archives/category/mobile-internet"
-            ],
-            "target": "/archives/category/mobile-internet"
-          },
-          {
-            "title": "电子商务",
-            "source": [
-              "www.199it.com/archives/category/electronic-commerce"
-            ],
-            "target": "/archives/category/electronic-commerce"
-          },
-          {
-            "title": "社交网络",
-            "source": [
-              "www.199it.com/archives/category/social-network"
-            ],
-            "target": "/archives/category/social-network"
-          },
-          {
-            "title": "网络广告",
-            "source": [
-              "www.199it.com/archives/category/advertising"
-            ],
-            "target": "/archives/category/advertising"
-          },
-          {
-            "title": "投资&amp;经济，互联网金融",
-            "source": [
-              "www.199it.com/archives/category/economic-data"
-            ],
-            "target": "/archives/category/economic-data"
-          },
-          {
-            "title": "服务",
-            "source": [
-              "www.199it.com/archives/category/service"
-            ],
-            "target": "/archives/category/service"
-          },
-          {
-            "title": "网络服务行业",
-            "source": [
-              "www.199it.com/archives/category/dataindustry"
-            ],
-            "target": "/archives/category/dataindustry"
-          },
-          {
-            "title": "用户研究",
-            "source": [
-              "www.199it.com/archives/category/internet-users"
-            ],
-            "target": "/archives/category/internet-users"
-          }
-        ],
-        "view": 0,
-        "location": "index.ts"
-      }
-    }
-  },
   "19lou": {
     "routes": {
       "/:city?": {
@@ -11291,108 +11105,6 @@
     "url": "bangumi.tv",
     "lang": "zh-CN"
   },
-  "baobua": {
-    "routes": {
-      "/category/:category": {
-        "path": "/category/:category",
-        "categories": [
-          "picture"
-        ],
-        "example": "/baobua/category/network",
-        "parameters": {
-          "category": "Category"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "baobua.com/cat/:category"
-            ],
-            "target": "/category/:category"
-          }
-        ],
-        "name": "Category",
-        "maintainers": [
-          "AiraNadih"
-        ],
-        "url": "baobua.com/",
-        "location": "category.ts"
-      },
-      "/": {
-        "path": "/",
-        "categories": [
-          "picture"
-        ],
-        "example": "/baobua",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "baobua.com/"
-            ],
-            "target": ""
-          }
-        ],
-        "name": "Latest",
-        "maintainers": [
-          "AiraNadih"
-        ],
-        "url": "baobua.com/",
-        "location": "latest.ts"
-      },
-      "/search/:keyword": {
-        "path": "/search/:keyword",
-        "categories": [
-          "picture"
-        ],
-        "example": "/baobua/search/cos",
-        "parameters": {
-          "keyword": "Keyword"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "baobua.com/search"
-            ],
-            "target": "/search/:keyword"
-          }
-        ],
-        "name": "Search",
-        "maintainers": [
-          "AiraNadih"
-        ],
-        "url": "baobua.com/",
-        "location": "search.ts"
-      }
-    },
-    "name": "BaoBua",
-    "url": "baobua.com",
-    "description": "BaoBua.Com - Hot beauty girl pics, girls photos, free watch online hd photo sets",
-    "lang": "en"
-  },
   "baoyu": {
     "routes": {
       "/blog": {
@@ -15653,132 +15365,6 @@
     "url": "bulianglin.com",
     "lang": "zh-CN"
   },
-  "bullionvault": {
-    "routes": {
-      "/gold-news/:category?": {
-        "path": "/gold-news/:category?",
-        "name": "Gold News",
-        "url": "bullionvault.com",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/bullionvault/gold-news",
-        "parameters": {
-          "category": {
-            "description": "Category",
-            "options": [
-              {
-                "label": "Gold market analysis & gold investment research",
-                "value": ""
-              },
-              {
-                "label": "Opinion & Analysis",
-                "value": "opinion-analysis"
-              },
-              {
-                "label": "Gold Price News",
-                "value": "gold-price-news"
-              },
-              {
-                "label": "Investment News",
-                "value": "news"
-              },
-              {
-                "label": "Gold Investor Index",
-                "value": "gold-investor-index"
-              },
-              {
-                "label": "Gold Infographics",
-                "value": "infographics"
-              },
-              {
-                "label": "Market Fundamentals",
-                "value": "market-fundamentals"
-              }
-            ]
-          }
-        },
-        "description": ":::tip\nIf you subscribe to [Gold Price News](https://www.bullionvault.com/gold-news/gold-price-news)，where the URL is `https://www.bullionvault.com/gold-news/gold-price-news`, extract the part `https://www.bullionvault.com/gold-news/` to the end, and use it as the parameter to fill in. Therefore, the route will be [`/bullionvault/gold-news/gold-price-news`](https://rsshub.app/bullionvault/gold-news/gold-price-news).\n:::\n\n| Category                                                                          | ID                                                                                   |\n| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |\n| [Opinion & Analysis](https://www.bullionvault.com/gold-news/opinion-analysis)     | [opinion-analysis](https://rsshub.app/bullionvault/gold-news/opinion-analysis)       |\n| [Gold Price News](https://www.bullionvault.com/gold-news/gold-price-news)         | [gold-price-news](https://rsshub.app/bullionvault/gold-news/gold-price-news)         |\n| [Investment News](https://www.bullionvault.com/gold-news/news)                    | [news](https://rsshub.app/bullionvault/gold-news/news)                               |\n| [Gold Investor Index](https://www.bullionvault.com/gold-news/gold-investor-index) | [gold-investor-index](https://rsshub.app/bullionvault/gold-news/gold-investor-index) |\n| [Gold Infographics](https://www.bullionvault.com/gold-news/infographics)          | [infographics](https://rsshub.app/bullionvault/gold-news/infographics)               |\n| [Market Fundamentals](https://www.bullionvault.com/gold-news/market-fundamentals) | [market-fundamentals](https://rsshub.app/bullionvault/gold-news/market-fundamentals) |\n",
-        "categories": [
-          "finance"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "bullionvault.com/gold-news/:category"
-            ]
-          },
-          {
-            "title": "Gold market analysis & gold investment research",
-            "source": [
-              "bullionvault.com/gold-news"
-            ],
-            "target": "/gold-news"
-          },
-          {
-            "title": "Opinion & Analysis",
-            "source": [
-              "bullionvault.com/gold-news/opinion-analysis"
-            ],
-            "target": "/gold-news/opinion-analysis"
-          },
-          {
-            "title": "Gold Price News",
-            "source": [
-              "bullionvault.com/gold-news/gold-price-news"
-            ],
-            "target": "/gold-news/gold-price-news"
-          },
-          {
-            "title": "Investment News",
-            "source": [
-              "bullionvault.com/gold-news/news"
-            ],
-            "target": "/gold-news/news"
-          },
-          {
-            "title": "Gold Investor Index",
-            "source": [
-              "bullionvault.com/gold-news/gold-investor-index"
-            ],
-            "target": "/gold-news/gold-investor-index"
-          },
-          {
-            "title": "Gold Infographics",
-            "source": [
-              "bullionvault.com/gold-news/infographics"
-            ],
-            "target": "/gold-news/infographics"
-          },
-          {
-            "title": "Market Fundamentals",
-            "source": [
-              "bullionvault.com/gold-news/market-fundamentals"
-            ],
-            "target": "/gold-news/market-fundamentals"
-          }
-        ],
-        "view": 0,
-        "location": "gold-news.ts"
-      }
-    },
-    "name": "BullionVault",
-    "url": "bullionvault.com",
-    "categories": [
-      "finance"
-    ],
-    "description": "",
-    "lang": "en"
-  },
   "bupt": {
     "routes": {
       "/jwc/:type": {
@@ -18409,35 +17995,6 @@
   },
   "cdu": {
     "routes": {
-      "/cdrw": {
-        "path": "/cdrw",
-        "categories": [
-          "university"
-        ],
-        "example": "/cdu/cdrw",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "news.cdu.edu.cn/"
-            ]
-          }
-        ],
-        "name": "成大人物",
-        "maintainers": [
-          "uuwor"
-        ],
-        "url": "news.cdu.edu.cn/",
-        "location": "cdrw.ts"
-      },
       "/jwgg": {
         "path": "/jwgg",
         "categories": [
@@ -24207,56 +23764,6 @@
     "description": "",
     "lang": "zh-CN"
   },
-  "cupl": {
-    "routes": {
-      "/jwc": {
-        "path": "/jwc",
-        "url": "jwc.cupl.edu.cn/index/tzgg.htm",
-        "categories": [
-          "university"
-        ],
-        "example": "/cupl/jwc",
-        "description": "中国政法大学教务处通知公告",
-        "name": "教务处通知公告",
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "jwc.cupl.edu.cn/index/tzgg.htm",
-              "jwc.cupl.edu.cn/"
-            ],
-            "target": "/jwc"
-          }
-        ],
-        "maintainers": [
-          "Fgju"
-        ],
-        "location": "jwc.ts"
-      }
-    },
-    "name": "CUPL",
-    "url": "jwc.cupl.edu.cn/index/tzgg.htm",
-    "description": "China University of Political Science and Law Academic Affairs Office Notices",
-    "zh": {
-      "name": "中国政法大学",
-      "description": "中国政法大学教务处通知公告"
-    },
-    "zh-TW": {
-      "name": "中國政法大學",
-      "description": "中國政法大學教務處通知公告"
-    },
-    "ja": {
-      "name": "中国政法大学",
-      "description": "中国政法大学教務処通知公告"
-    }
-  },
   "curiouscat": {
     "routes": {
       "/user/:id": {
@@ -26614,53 +26121,6 @@
     "name": "大众点评",
     "url": "dianping.com",
     "lang": "zh-CN"
-  },
-  "diariofruticola": {
-    "routes": {
-      "/filtro/:filter{.+}": {
-        "path": "/filtro/:filter{.+}",
-        "name": "Filtro",
-        "url": "diariofruticola.cl",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/diariofruticola/filtro/cerezas/71",
-        "parameters": {
-          "filter": {
-            "description": "Filter"
-          }
-        },
-        "description": ":::tip\nIf you subscribe to [Cerezas](https://www.diariofruticola.cl/filtro/cerezas/71/)，where the URL is `https://www.diariofruticola.cl/filtro/cerezas/71/`, extract the part `https://diariofruticola.cl/filtro` to the end, which is `/`, and use it as the parameter to fill in. Therefore, the route will be [`/diariofruticola/filtro/cerezas/71`](https://rsshub.app/diariofruticola/filtro/cerezas/71).\n:::\n",
-        "categories": [
-          "new-media"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "diariofruticola.cl/filtro/:filter"
-            ]
-          }
-        ],
-        "view": 0,
-        "location": "filtro.ts"
-      }
-    },
-    "name": "Diario Frutícola",
-    "url": "diariofruticola.cl",
-    "categories": [
-      "new-media"
-    ],
-    "description": "",
-    "lang": "es"
   },
   "diershoubing": {
     "routes": {
@@ -36207,46 +35667,6 @@
     "url": "www.gisreportsonline.com",
     "lang": "en"
   },
-  "gitcode": {
-    "routes": {
-      "/commits/:owner/:repo/:branch?": {
-        "path": "/commits/:owner/:repo/:branch?",
-        "categories": [
-          "programming"
-        ],
-        "example": "/gitcode/commits/openharmony-sig/flutter_flutter",
-        "parameters": {
-          "owner": "用户名/组织名",
-          "repo": "仓库名",
-          "branch": "分支名，可选，默认为主分支"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "gitcode.com/:owner/:repo/commits",
-              "gitcode.com/:owner/:repo/commits/:branch"
-            ]
-          }
-        ],
-        "name": "仓库提交",
-        "maintainers": [
-          "JiZhi-Error"
-        ],
-        "location": "repos/commits.ts"
-      }
-    },
-    "name": "GitCode",
-    "url": "gitcode.com",
-    "lang": "zh-CN"
-  },
   "gitee": {
     "routes": {
       "/commits/:owner/:repo": {
@@ -39149,34 +38569,6 @@
         ],
         "location": "hainan/iitb/tzgg.ts"
       },
-      "/hangzhou/zwfw": {
-        "path": "/hangzhou/zwfw",
-        "categories": [
-          "government"
-        ],
-        "example": "/gov/hangzhou/zwfw",
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": true,
-          "antiCrawler": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "hangzhou.gov.cn/col/col1256349/index.html"
-            ]
-          }
-        ],
-        "name": "政务服务公开",
-        "maintainers": [
-          "flynncao"
-        ],
-        "url": "hangzhou.gov.cn/col/col1256349/index.html",
-        "location": "hangzhou/zwfw.ts"
-      },
       "/hebei/czt/xwdt/:category?": {
         "path": "/hebei/czt/xwdt/:category?",
         "categories": [
@@ -41797,10 +41189,9 @@
         ],
         "maintainers": [
           "bigfei",
-          "nczitzk",
-          "reply2future"
+          "nczitzk"
         ],
-        "example": "/gov/stats/sj/zxfb",
+        "example": "/stats/sj/zxfb",
         "radar": [
           {
             "title": "国家统计局 通用",
@@ -42301,10 +41692,7 @@
       "government"
     ],
     "description": "",
-    "lang": "zh-CN",
-    "zh": {
-      "name": "杭州市人民政府"
-    }
+    "lang": "zh-CN"
   },
   "gq": {
     "routes": {
@@ -61729,41 +61117,6 @@
     "url": "meituan.com",
     "lang": "zh-CN"
   },
-  "melonbooks": {
-    "routes": {
-      "/search/:query?": {
-        "path": "/search/:query?",
-        "categories": [
-          "anime"
-        ],
-        "example": "/melonbooks/search/name=けいおん",
-        "parameters": {
-          "category": "链接参数，对应网址问号后的内容，不携带问号"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "搜索结果",
-        "maintainers": [
-          "cokemine"
-        ],
-        "description": "::: tip\n如果你期望获取限制级内容，可以添加`&adult_view=1`参数\n:::",
-        "location": "search.ts"
-      }
-    },
-    "name": "メロンブックス",
-    "url": "www.melonbooks.co.jp",
-    "description": "サイン本の同人誌、同人ゲーム、同人音楽、同人グッズの通販は国内最大級、業界最速の萌えいっぱいの総合書店メロンブックスで。同人作品、同人委託の特典付商品も多数あり。直営店舗数も同人業界で最大級。",
-    "lang": "ja",
-    "categories": [
-      "anime"
-    ]
-  },
   "mercari": {
     "routes": {
       "/:sort/:order/:status/:keyword": {
@@ -69032,102 +68385,6 @@
     "url": "nwafu.edu.cn",
     "lang": "zh-CN"
   },
-  "nwnu": {
-    "routes": {
-      "/college/csse/:column": {
-        "path": "/college/csse/:column",
-        "name": "计算机科学与工程学院",
-        "maintainers": [
-          "PrinOrange"
-        ],
-        "categories": [
-          "university"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "example": "/college/csse/2435",
-        "radar": [
-          {
-            "source": [
-              "jsj.nwnu.edu.cn/:column/list"
-            ],
-            "target": "/college/csse/:column"
-          }
-        ],
-        "description": "\n| column | 标题       | 描述                                          |\n| ------ | ---------- | --------------------------------------------- |\n| 2435   | 学院新闻   | 计算机科学与工程 学院新闻                     |\n| 2436   | 通知公告   | 计算机科学与工程 通知公告                     |\n| 2437   | 学术动态   | 计算机科学与工程 学术动态                     |\n| 2446   | 研究生招生 | 计算机科学与工程学院 研究生招生动态及相关新闻 |\n| 8411   | 评估动态   | 计算机科学与工程学院 院系学科评估动态         |",
-        "location": "routes/college/csse.ts"
-      },
-      "/department/academic-affairs/:column": {
-        "path": "/department/academic-affairs/:column",
-        "name": "教务处",
-        "maintainers": [
-          "PrinOrange"
-        ],
-        "categories": [
-          "university"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportRadar": true,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "example": "/department/academic-affairs/tzgg",
-        "radar": [
-          {
-            "source": [
-              "jwc.nwnu.edu.cn/:column/list.htm"
-            ],
-            "target": "/department/academic-affairs/:column"
-          }
-        ],
-        "description": "\n| column | 标题     | 描述                     |\n| ------ | -------- | ------------------------ |\n| tzgg   | 通知公告 | 西北师范大学教务通知公告 |\n| jwkx   | 教务快讯 | 西北师范大学教务快讯     |",
-        "location": "routes/department/academic-affairs.ts"
-      },
-      "/department/postgraduate/:column": {
-        "path": "/department/postgraduate/:column",
-        "name": "研究生院",
-        "maintainers": [
-          "PrinOrange"
-        ],
-        "categories": [
-          "university"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportRadar": true,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "example": "/department/postgraduate/2701",
-        "radar": [
-          {
-            "source": [
-              "yjsy.nwnu.edu.cn/:column/list.htm"
-            ],
-            "target": "/department/postgraduate/:column"
-          }
-        ],
-        "description": "\n| column | 标题                           | 描述                                               |\n| ------ | ------------------------------ | -------------------------------------------------- |\n| 2701   | 招生工作（包括硕士、博士招生） | 研究生院招生信息（包含硕士招生和博士招生两个栏目） |\n| 2712   | 博士招生                       | 研究生院博士研究生招生信息                         |\n| 2713   | 硕士招生                       | 研究生院硕士研究生招生信息                         |\n| 2702   | 培养工作                       | 培养工作栏目信息汇总                               |\n| 2703   | 学科建设                       | 研究生院学科建设信息汇总                           |\n| 2704   | 学位工作                       | 研究生院学位工作栏目信息汇总                       |",
-        "location": "routes/department/postgraduate.ts"
-      }
-    },
-    "name": "西北师范大学",
-    "url": "www.nwnu.edu.cn",
-    "lang": "zh-CN"
-  },
   "nyaa": {
     "routes": {
       "/search/:query?": {
@@ -75705,119 +74962,6 @@
     "name": "PlayStation Store",
     "url": "www.playstation.com",
     "lang": "en"
-  },
-  "psnine": {
-    "routes": {
-      "/game": {
-        "path": "/game",
-        "categories": [
-          "game"
-        ],
-        "example": "/psnine/game",
-        "name": "游戏",
-        "maintainers": [
-          "betta-cyber"
-        ],
-        "radar": [
-          {
-            "source": [
-              "psnine.com/psngame",
-              "psnine.com"
-            ]
-          }
-        ],
-        "location": "game.ts"
-      },
-      "/": {
-        "path": "/",
-        "categories": [
-          "game"
-        ],
-        "example": "/psnine",
-        "name": "首页",
-        "maintainers": [
-          "betta-cyber"
-        ],
-        "radar": [
-          {
-            "source": [
-              "psnine.com"
-            ]
-          }
-        ],
-        "location": "index.ts"
-      },
-      "/node/:id?/:order?": {
-        "path": "/node/:id?/:order?",
-        "parameters": {
-          "id": "节点 id，见下表，默认为 news",
-          "order": "排序，`date` 即最新，默认为 `obdate` 即综合排序"
-        },
-        "categories": [
-          "game"
-        ],
-        "example": "/psnine/node/news",
-        "name": "节点",
-        "maintainers": [
-          "betta-cyber",
-          "nczitzk"
-        ],
-        "radar": [
-          {
-            "source": [
-              "psnine.com/node/:id"
-            ]
-          }
-        ],
-        "location": "node.ts"
-      },
-      "/shuzhe": {
-        "path": "/shuzhe",
-        "categories": [
-          "game"
-        ],
-        "example": "/psnine/shuzhe",
-        "name": "数折",
-        "maintainers": [
-          "betta-cyber"
-        ],
-        "radar": [
-          {
-            "source": [
-              "psnine.com/dd",
-              "psnine.com"
-            ]
-          }
-        ],
-        "location": "shuzhe.ts"
-      },
-      "/trade": {
-        "path": "/trade",
-        "categories": [
-          "game"
-        ],
-        "example": "/psnine/trade",
-        "name": "闲游",
-        "maintainers": [
-          "betta-cyber"
-        ],
-        "radar": [
-          {
-            "source": [
-              "psnine.com/trade",
-              "psnine.com"
-            ]
-          }
-        ],
-        "location": "trade.ts"
-      }
-    },
-    "name": "PSN 中文站",
-    "url": "psnine.com",
-    "lang": "zh-CN",
-    "categories": [
-      "game"
-    ]
   },
   "psyche": {
     "routes": {
@@ -97936,45 +97080,6 @@
     "url": "www.ulapia.com",
     "lang": "zh-CN"
   },
-  "unipd": {
-    "routes": {
-      "/ilbolive/news": {
-        "path": "/ilbolive/news",
-        "name": "Il Bo Live - News",
-        "url": "ilbolive.unipd.it/it/news",
-        "maintainers": [
-          "Gexi0619"
-        ],
-        "example": "/unipd/ilbolive/news",
-        "parameters": {},
-        "description": "Il Bo Live - News",
-        "categories": [
-          "university"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "ilbolive.unipd.it/it/news"
-            ],
-            "target": "/ilbolive/news"
-          }
-        ],
-        "location": "ilbolive/news.ts"
-      }
-    },
-    "name": "Università di Padova",
-    "url": "unipd.it",
-    "lang": "it"
-  },
   "uniqlo": {
     "routes": {
       "/new/:country/:category": {
@@ -106520,10 +105625,9 @@
         },
         "name": "游研社 - 分类文章",
         "maintainers": [
-          "betta-cyber",
-          "dousha"
+          "LightStrawberry"
         ],
-        "description": "| 推游      | 游戏史  | 大事件 | 文化    | 趣闻 | 经典回顾 | 业界     |\n| --------- | ------- | ------ | ------- | ---- | -------- | -------- |\n| recommend | history | big    | culture | news | retro    | industry |",
+        "description": "| 推游      | 游戏史  | 大事件 | 文化    | 趣闻 | 经典回顾 |\n| --------- | ------- | ------ | ------- | ---- | -------- |\n| recommend | history | big    | culture | news | retro    |",
         "location": "category.ts"
       },
       "/docs": {
