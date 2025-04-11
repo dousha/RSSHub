@@ -13485,6 +13485,14 @@
         "target": "/gcores/gcores/news"
       },
       {
+        "title": "预告",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/radios/preview"
+        ],
+        "target": "/gcores/gcores/radios/preview"
+      },
+      {
         "title": "标签",
         "docs": "https://docs.rsshub.app/routes/game",
         "source": [
@@ -15471,6 +15479,19 @@
           "/s78/:column"
         ],
         "target": "/gov/moe/s78/:column"
+      }
+    ]
+  },
+  "mof.gov.cn": {
+    "_name": "上海市人民政府",
+    "gss": [
+      {
+        "title": "关税政策文件",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/gzdt/:category/"
+        ],
+        "target": "/gov/mof/gss/:category"
       }
     ]
   },
